@@ -10,7 +10,7 @@ public class UI_Controller : MonoBehaviour
     public GameObject Death_Panel;
     public GameObject Menu_Panel;
     public GameObject Destructionpoint;
-    private float High_score = Score_Singleton.Instance.High_Score;
+    private float High_score;
     float Current_Score = 0f;
     float max_height = 0f;
     public Text High_Score_Text;
@@ -19,7 +19,10 @@ public class UI_Controller : MonoBehaviour
 
     // Start is called before the first frame update
 
-
+    private void Start()
+    {
+        High_score = Score_Singleton.Instance.High_Score;
+    }
     // Update is called once per frame
     void Update()
     {

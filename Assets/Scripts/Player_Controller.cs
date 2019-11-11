@@ -17,12 +17,9 @@ public class Player_Controller : MonoBehaviour
     bool isGrounded;
     bool Dead = false;
 
-    [SerializeField]
-    Transform GroundCheck;
-    [SerializeField]
-    Transform GroundCheckL;
-    [SerializeField]
-    Transform GroundCheckR;
+    public Transform GroundCheck;
+    public Transform GroundCheckL;
+    public Transform GroundCheckR;
     // Start is called before the first frame update
     void Start()
     {
