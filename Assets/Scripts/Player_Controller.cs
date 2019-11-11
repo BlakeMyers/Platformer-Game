@@ -31,7 +31,7 @@ public class Player_Controller : MonoBehaviour
         if (collision.gameObject.tag.Equals("spikes"))
         {
             Dead = true;
-            animator.Play("Die");
+            animator.Play("player_death");
             Death_Screen.gameObject.SetActive(true);
 
         }
@@ -55,24 +55,25 @@ public class Player_Controller : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(RunSpeed, rb2d.velocity.y);
 
-                    animator.Play("Run_Right");
+                    animator.Play("walk_right");
             }
             else if (!Dead && (Input.GetKey("a") || Input.GetKey("left")))
             {
                 rb2d.velocity = new Vector2(-RunSpeed, rb2d.velocity.y);
 
-                    animator.Play("Run_Left");
+                    animator.Play("walk_left");
             }
             else
             {
                 rb2d.velocity = new Vector2(0, rb2d.velocity.y);
 
                 if (isGrounded)
-                    animator.Play("Idle");
+                    animator.Play("player_idle");
             }
             if (!Dead && (Input.GetKey("space") && isGrounded))
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, JumpHeight);
+            animator.Play("player_jump");
             }
         }
     }
