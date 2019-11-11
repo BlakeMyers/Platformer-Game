@@ -1,0 +1,1 @@
+Use the "a" and "d" keys to move left and right across the platforms. You can use the "Space" key to jump and if held down you can surf up through platforms above you. The game is endless so attempt to reach the highest score you can by climbing higher and collecting coins.
