@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Menu_Script : MonoBehaviour
 {
     public GameObject Credits_panel;
+    public GameObject Help_panel;
 
     // Update is called once per frame
     void Update()
@@ -24,9 +25,19 @@ public class Menu_Script : MonoBehaviour
         Credits_panel.gameObject.SetActive(false);
     }
 
+    public void Back2()
+    {
+        Help_panel.gameObject.SetActive(false);
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void Help()
+    {
+        Help_panel.gameObject.SetActive(true);
     }
 
     public void QuitGame()
