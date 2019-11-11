@@ -29,20 +29,21 @@ public class Player_Controller : MonoBehaviour
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("spikes"))
+        {
+            Dead = true;
+            animator.Play("Die");
+            Death_Screen.gameObject.SetActive(true);
+
+        }
+    }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         
-            if(Physics2D.Linecast(transform.position, GroundCheck.position, 1 << LayerMask.NameToLayer("spikes")) ||
-                Physics2D.Linecast(transform.position, GroundCheckL.position, 1 << LayerMask.NameToLayer("spikes")) ||
-                Physics2D.Linecast(transform.position, GroundCheckR.position, 1 << LayerMask.NameToLayer("spikes")))
-            {
-                    Dead = true;
-                    animator.Play("Die");
-                    Death_Screen.gameObject.SetActive(true);
-                    
-            }
             if (Physics2D.Linecast(transform.position, GroundCheck.position, 1 << LayerMask.NameToLayer("Ground")) ||
                 Physics2D.Linecast(transform.position, GroundCheckL.position, 1 << LayerMask.NameToLayer("Ground")) ||
                 Physics2D.Linecast(transform.position, GroundCheckR.position, 1 << LayerMask.NameToLayer("Ground")))

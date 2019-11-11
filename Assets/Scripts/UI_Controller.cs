@@ -15,6 +15,7 @@ public class UI_Controller : MonoBehaviour
     float max_height = 0f;
     public Text High_Score_Text;
     public Text Current_Score_Text;
+    public int numCoins = 0;
 
     // Start is called before the first frame update
 
@@ -26,7 +27,7 @@ public class UI_Controller : MonoBehaviour
             Menu_Panel.gameObject.SetActive(true);
         if (Player.transform.position.y > max_height)
             max_height = Player.transform.position.y;
-        Current_Score = max_height * 10;
+        Current_Score = (max_height * 10) + (numCoins *10);
         if (Current_Score > High_score)
         {
             High_score = Current_Score;

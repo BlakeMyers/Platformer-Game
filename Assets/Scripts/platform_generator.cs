@@ -6,6 +6,7 @@ public class platform_generator : MonoBehaviour
 {
     public GameObject platform1;
     public GameObject spikes;
+    public GameObject Coins;
     public Transform spikePlacer;
     public Transform generationPoint;
     public float distancebetween;
@@ -30,7 +31,8 @@ public class platform_generator : MonoBehaviour
             spikePlacer.position = new Vector3(transform.position.x + Random.Range(smin,smax), transform.position.y + platformWidth + distancebetween, transform.position.z);
             Instantiate(spikes, spikePlacer.position, transform.rotation);
             Instantiate(platform1, transform.position, transform.rotation);
-            
+            Instantiate(Coins, transform.position, transform.rotation);
+
         }
     }
 }
