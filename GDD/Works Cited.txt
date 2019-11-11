@@ -1,0 +1,13 @@
+Works Cited
+
+GamesplusJames, director. Unity Endless Runner Tutorial #4 - Generating Infinite Platforms. YouTube, YouTube, 17 Aug. 2015, www.youtube.com/watch?v=yiXlPP8jOvs&list=LL79vfbHbI9uBUEm10MuborA&index=4.
+GamesplusJames, director. Unity Endless Runner Tutorial #5 Destroying Platforms and Adding Some Random Space. YouTube, YouTube, 19 Aug. 2015, www.youtube.com/watch?v=56pUTFSoESE&list=LL79vfbHbI9uBUEm10MuborA&index=1.
+Lost Relic Games, director. Game Dev Basics: Let's Make a 2D Player Controller in C# and Unity! YouTube, YouTube, 21 Jan. 2019, www.youtube.com/watch?v=44djqUTg2Sg&list=LL79vfbHbI9uBUEm10MuborA&index=2.
+Reso Coder, director. Singletons in Unity - Simple Tutorial for Beginners. YouTube, YouTube, 24 Mar. 2017, www.youtube.com/watch?v=CPKAgyp8cno.
+Zotov, Alexander, director. How to Make Coin Pick up Feature in Your Unity 2D Arcade Game with Sound Effect | Unity 2D Tutorial. YouTube, YouTube, www.youtube.com/watch?v=lNXDK8a75l0.
+
+The above Videos Covered various topics that I applied to my game in order to create a finished product including code for platform creation, animation, how to use singletons, how to code your own 2D Character controller, and how to implement a coin system that you can pickup in game.
+
+The Sprites in the Game Were Created by myself using the Sprite editing website piksel.
+
+The Audio Used was Created by my Roommate who would like his name to be anonymous so he has opted to go by his online gamertag "Swagio". He used an online music creator called Soundation to create the Background music file "Badaboom.mp3"
